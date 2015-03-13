@@ -1,0 +1,236 @@
+
+/*** CONTAINER ***/
+
+.home, .practices, .dashboard, .contact-section {
+    position:relative;
+    margin: 1em 0px; 
+    /*min-height:500px;*/
+    min-width: 768px;
+}
+
+.container-fluid{
+    margin-right: auto;
+    margin-left: auto;
+    width: auto!important;  
+    padding: 0;
+    min-width: 768px;
+    max-width: 1240px;
+    position: relative;
+}
+
+/*** NAVIGATION HEADER ***/
+
+.top-bar {
+  width: 100%;
+  margin: 15px 0px;
+  clear: both;
+}
+
+.top-bar img {
+  width: auto;
+  max-width: 20em;
+  height: auto;
+  max-height: 12em;
+}
+
+.top-bar ul {
+  display: inline-block;
+  margin: 0px;
+  position: absolute;
+  right: 0em;
+}
+
+.navigation-links li {
+  text-align: right;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.navigation-links li a {
+  font-size: 1.25em;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation-links li:hover {
+  border-bottom: 2px solid #a6e22e;
+}
+
+
+/*** HOME (BANNER) ***/
+.banner-picture { 
+  background: url("underwater-swimmer.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 715px;
+  width: 100%;
+}
+
+.banner-body {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.banner-heading {
+  position: absolute;
+  top: 10em;
+  color: white;
+  font-family: "JosefinSans-Thin";
+  text-transform: uppercase;
+}
+
+.banner-heading h1 {
+  margin: 0px;
+  font-size: 3em;
+  letter-spacing: 10px;
+  margin-bottom: 30px;
+}
+
+.banner-body .add-new {
+  width: 30%;
+}
+
+/*** DASHBOARD ***/
+.dashboard-shot {
+  width: 50%;
+}
+.dashboard .tagline {
+  width: 50%;
+  font-size: 3em;
+  margin-left: 1.75em;
+}
+
+/*** PRACTICES ***/
+.practice-shot {
+  width: 50%;
+}
+.practices .tagline {
+  width: 50%;
+  font-size: 3em;
+  margin-left: 1.75em;
+}
+
+/*** DEMO ***/
+a.demo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .5em;
+  color: #26a69a;
+}
+
+/*** UPLOAD-HISTORY ***/
+.upload-history-shot {
+  width: 50%;
+}
+.upload-history .tagline {
+  width: 50%;
+  font-size: 3em;
+  margin-left: 0px;
+}
+
+/*** SIGN-UP ***/
+.sign-up-picture { 
+  background: url("bottom-t.png") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+.sign-up {
+  background-color: #3a4754;
+  text-align: center;
+  color: white;
+  font-family: "JosefinSans-Thin";
+}
+
+.sign-up h2 {
+  font-size: 2em;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.sign-up p {
+  text-align: center;
+  font-size: 1.75em;
+  letter-spacing: 2px;
+  width: 60%;
+  margin:auto;
+  padding: 15px 0px 30px;
+}
+
+.sign-up .add-new {
+  width: 30%;
+}
+
+/*** CONTACT SECTION ***/
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-tagline {
+  font-size: 2em;
+
+}
+
+.contact-tagline span {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.contact-section .add-new {
+  border: 2px solid #26a69a;
+  color: #26a69a;
+  width: 100%;
+}
+
+.contact-section .add-new:hover,
+.contact-section .add-new:active,
+.contact-section .add-new:focus {
+  border: 2px solid #677787;
+  color: white;
+  width: 100%;
+}
+
+.contact-section input {
+  font-size: 1.25em;
+}
+
+/*** FOOTER SECTION ***/
+
+.footer {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.footer .social-icon span {
+  color: #677787; 
+  margin: 0px 20px;
+}
+
+.footer .social-icon span:hover {
+  color: #26a69a;
+}
+
+/*** LEGAL ***/
+
+.legal {
+  margin: 15px 0px;
+  text-align: center;
+}
+
+.legal > span {
+  padding: 10px;
+}
+
+.legal a {
+  color: #677787;
+}
