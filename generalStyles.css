@@ -1,11 +1,11 @@
 /************** 
-    very dark:#2e353c; hover: #3f4952;
-    dark:#3a4754;
+    very dark:#2e353c; hover: #3f4952; <-- not in use anymore
+    dark: #323d48 hover: #3a4754
     logo gray: #677787;
-    very light #d9e3ee;
+    very light (hover) #d9e3ee;
     clouds: #ecf0f1;
     white: whitesmoke;
-    accent: #a6e22e; & #26a69a ....light-blue: #29ace4 
+    accent: #a6e22e; & #26a69a ....light-blue: #29ace4  
  **************/
 
 /* CSS declarations go here */
@@ -17,28 +17,6 @@ html, body {
   font-family: "JosefinSans-Regular";
   background-color: #ecf0f1;
   color: #677787;
-}
-
-/*** Buttons ***/
-.add-new {
-  font-size: 1.1em;
-  letter-spacing: 5px;
-  background: none;
-  border: 2px solid #A6E22E;
-  color: #A6E22E;
-  border-radius: 0%;
-  text-transform: uppercase;
-  width: 100%;
-  height: 100%;
-  padding: 5px;
-}
-
-.add-new:hover {
-  background: #677787;
-  border: 2px solid #677787;
-  color: white;
-  border-radius: 0%;
-  text-transform: uppercase;
 }
 
 /*** Input Boxes ***/

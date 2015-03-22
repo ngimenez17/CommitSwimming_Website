@@ -1,11 +1,11 @@
 
 /*** CONTAINER ***/
 
-.home, .practices, .dashboard, .contact-section {
+.practices, .dashboard, .contact-section {
     position:relative;
     margin: 1em 0px; 
     /*min-height:500px;*/
-    min-width: 768px;
+    /*min-width: 768px;*/
 }
 
 .container-fluid{
@@ -13,17 +13,41 @@
     margin-left: auto;
     width: auto!important;  
     padding: 0;
-    min-width: 768px;
-    max-width: 1240px;
+    /*min-width: 768px;*/
+    /*max-width: 1240px;*/
     position: relative;
+}
+
+/*** Buttons ***/
+.add-new {
+  font-size: 1.15em;
+  letter-spacing: 5px;
+  background: none;
+  border: 2px solid #A6E22E;
+  color: #A6E22E;
+  border-radius: 0%;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.add-new:hover {
+  background: #677787;
+  border: 2px solid #677787;
+  color: white;
+  border-radius: 0%;
+  text-transform: uppercase;
+}
+
+.btn {
+  height: auto;
 }
 
 /*** NAVIGATION HEADER ***/
 
 .top-bar {
-  width: 100%;
   margin: 15px 0px;
-  clear: both;
 }
 
 .top-bar img {
@@ -33,40 +57,40 @@
   max-height: 12em;
 }
 
-.top-bar ul {
-  display: inline-block;
-  margin: 0px;
-  position: absolute;
-  right: 0em;
-}
-
-.navigation-links li {
-  text-align: right;
-  display: inline-block;
-  padding: 10px 15px;
+.navigation-links {
+  position: fixed;
+  padding: 0px 3em;
+  color: #323d48;
+  background-color: #A6E22E;
+  border: 2px solid #A6E22E;
+  z-index: 100;
+  font-family: "JosefinSans-Bold";
 }
 
 .navigation-links li a {
-  font-size: 1.25em;
-  color: white;
+  font-size: 1.15em;
+  letter-spacing: 5px;
+  color: inherit;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.navigation-links li:hover {
-  border-bottom: 2px solid #a6e22e;
+.navigation-links:hover {
+  background-color: #677787;
+  border: 2px solid #677787;
+  color: white;
 }
 
 
 /*** HOME (BANNER) ***/
 .banner-picture { 
-  background: url("underwater-swimmer.png") no-repeat center center fixed; 
+  background: url("underwater-swimmer-1.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 715px;
+  min-height: 825px;
   width: 100%;
 }
 
@@ -78,7 +102,7 @@
 
 .banner-heading {
   position: absolute;
-  top: 10em;
+  top: 14em;
   color: white;
   font-family: "JosefinSans-Thin";
   text-transform: uppercase;
@@ -92,46 +116,37 @@
 }
 
 .banner-body .add-new {
-  width: 30%;
+  width: 40%;
 }
 
 /*** DASHBOARD ***/
 .dashboard-shot {
-  width: 50%;
+  width: 100%;
 }
-.dashboard .tagline {
-  width: 50%;
-  font-size: 3em;
-  margin-left: 1.75em;
+
+.tagline {
+  font-size: 3.5em;
 }
 
 /*** PRACTICES ***/
 .practice-shot {
-  width: 50%;
+  width: 100%;
 }
-.practices .tagline {
-  width: 50%;
-  font-size: 3em;
-  margin-left: 1.75em;
-}
+
 
 /*** DEMO ***/
 a.demo {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: .5em;
+  font-size: .6em;
   color: #26a69a;
 }
 
 /*** UPLOAD-HISTORY ***/
 .upload-history-shot {
-  width: 50%;
+  width: 100%;
 }
-.upload-history .tagline {
-  width: 50%;
-  font-size: 3em;
-  margin-left: 0px;
-}
+
 
 /*** SIGN-UP ***/
 .sign-up-picture { 
@@ -160,13 +175,13 @@ a.demo {
   text-align: center;
   font-size: 1.75em;
   letter-spacing: 2px;
-  width: 60%;
+  width: 65%;
   margin:auto;
   padding: 15px 0px 30px;
 }
 
 .sign-up .add-new {
-  width: 30%;
+  width: 40%;
 }
 
 /*** CONTACT SECTION ***/
@@ -233,4 +248,140 @@ a.demo {
 
 .legal a {
   color: #677787;
+}
+
+
+/**************************** FIRST RESPONSIVE BREAK ****************************/
+
+@media (max-width: 1024px) {
+.banner-picture { 
+  background: url("underwater-swimmer-2.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 500px;
+  width: 100%;
+}
+
+.banner-heading {
+  top: 7em;
+}
+
+.banner-body .add-new {
+  width: 50%;
+}
+
+.sign-up .add-new {
+  width: 55%;
+}
+
+.banner-heading h1 {
+  font-size: 2em;
+  line-height: 1.75em;
+}
+
+.tagline {
+  font-size: 2.5em;
+}
+
+.sign-up h2 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+  line-height: 1.75em;
+}
+
+.sign-up p {
+  width: 80%;
+  font-size: 1.25em;
+}
+
+.email-us {
+  font-size: .9em;
+}
+
+.contact-tagline {
+  font-size: 1.75em;
+}
+
+}
+
+/**************************** SECOND RESPONSIVE BREAK ****************************/
+
+@media (max-width: 635px) {
+.top-bar img {
+  width: auto;
+  max-width: 18em;
+}
+
+.navigation-links {
+  font-size: .75em;
+  padding: 0px 10px;
+  height: 35px;
+}
+
+.banner-picture { 
+  background: url("underwater-swimmer-3.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 350px;
+  width: 100%;
+}
+
+.banner-heading {
+  top: 5em;
+}
+
+.banner-body .add-new {
+  font-size: .9em;
+}
+
+.banner-heading h1 {
+  font-size: 1.25em;
+  line-height: 2em;
+  letter-spacing: 5px;
+}
+
+.sign-up .add-new {
+  width: 90%;
+}
+
+.tagline {
+  font-size: 1.7em;
+}
+
+a.demo {
+  font-size: .75em;
+}
+
+.sign-up h2 {
+  font-size: 1.25em;
+  line-height: 2em;
+}
+
+.sign-up p {
+  width: 90%;
+  font-size: 1.25em;
+}
+
+.contact-tagline {
+  font-size: 1.3em;
+}
+
+.email-us {
+  line-height: 0px;
+  font-size: .8em;
+}
+
+.footer {
+  font-size: 1.5em;
+}
+
+.legal > span {
+  font-size: .9em;
+}
+
+
 }
