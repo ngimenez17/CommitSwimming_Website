@@ -3,7 +3,7 @@
 
 .practices, .dashboard, .contact-section {
     position:relative;
-    margin: 1em 0px; 
+    margin: 4em 0px; 
     /*min-height:500px;*/
     /*min-width: 768px;*/
 }
@@ -163,11 +163,14 @@ a.demo {
   text-align: center;
   color: white;
   font-family: "JosefinSans-Thin";
+  height: 450px;
 }
 
 .sign-up h2 {
-  font-size: 2em;
-  letter-spacing: 7px;
+  font-size: 2.5em;
+  letter-spacing: 8px;
+  margin-top: 1.5em;
+  margin-bottom: 1.25em;
   text-transform: uppercase;
 }
 
@@ -177,7 +180,8 @@ a.demo {
   letter-spacing: 2px;
   width: 65%;
   margin:auto;
-  padding: 15px 0px 30px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .sign-up .add-new {
@@ -326,7 +330,7 @@ a.demo {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 350px;
+  min-height: 400px;
   width: 100%;
 }
 
